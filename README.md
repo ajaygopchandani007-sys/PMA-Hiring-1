@@ -1,41 +1,416 @@
-# PMA-Hiring-1
-PMA Consulting - CA Articleship Hiring Information
-JOIN PMA
-CONSULTING
-Your Gateway to GST & Customs Excellence
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMA Consulting - CA Articleship</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-🔥 NOW HIRING - CA ARTICLESHIP
-What You'll Master
-⚖️
-Legal Drafting
-Master notices, appeals & legal documentation
-🔍
-Investigations & Audits
-Real-world exposure to complex cases
-💼
-GST & Customs
-Lead assignments with top departments
-💰
-Refund Management
-Handle high-value GST refund cases
-✅
-Compliance & Advisory
-Strategic consultations with clients
-🎯
-Practical Exposure
-Work on live projects from day one
-Why PMA Consulting?
-Specialized training in high-demand Indirect Tax domain
-Direct mentorship from industry experts
-Hands-on experience with premium clients
-Build a powerful network in GST & Customs
-Fast-track your career with cutting-edge skills
-Ready to Level Up Your Career?
-CA Sajana Kumavat
-📱 90110 60487
-Sajana.Kumavat@lawgical.in
-CA Sahil Tharani
-📱 90988 90333
-Sahil.Tharani@lawgical.in
-🔗 LinkedIn: CA Pritam Mahure 📸 Instagram: PMA_Consulting
-📍 Pune
+        :root {
+            --primary: #FF6B35;
+            --secondary: #004E89;
+            --accent: #FFD23F;
+            --dark: #1A1A2E;
+            --light: #F8F9FA;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            max-width: 800px;
+            width: 100%;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: slideUp 0.6s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--secondary) 0%, #003d6b 100%);
+            padding: 50px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 400px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        .header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 48px;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+            line-height: 1.2;
+        }
+
+        .header .tagline {
+            font-size: 20px;
+            color: var(--accent);
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--dark);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-top: 20px;
+            position: relative;
+            z-index: 1;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--secondary);
+            margin-bottom: 25px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 6px;
+            height: 30px;
+            background: var(--primary);
+            border-radius: 3px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .skill-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-color: var(--primary);
+        }
+
+        .skill-icon {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .skill-title {
+            font-weight: 700;
+            color: var(--secondary);
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .skill-desc {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        .why-join {
+            background: linear-gradient(135deg, #FF6B35 0%, #ff8555 100%);
+            padding: 30px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .why-join h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .why-join ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .why-join li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            font-weight: 500;
+        }
+
+        .why-join li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            font-weight: 900;
+            font-size: 18px;
+            color: var(--accent);
+        }
+
+        .cta-section {
+            background: var(--dark);
+            padding: 35px;
+            border-radius: 16px;
+            text-align: center;
+            color: white;
+        }
+
+        .cta-section h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 26px;
+            font-weight: 900;
+            margin-bottom: 25px;
+            color: var(--accent);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: scale(1.02);
+        }
+
+        .contact-name {
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: var(--accent);
+        }
+
+        .contact-info {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent);
+        }
+
+        .social-links {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+        }
+
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+        }
+
+        .location {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 700;
+            margin-top: 15px;
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 36px;
+            }
+
+            .header .tagline {
+                font-size: 16px;
+            }
+
+            .content {
+                padding: 30px 25px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>JOIN PMA<br>CONSULTING</h1>
+            <p class="tagline">Your Gateway to GST & Customs Excellence</p>
+            <span class="badge">🔥 NOW HIRING - CA ARTICLESHIP</span>
+        </div>
+
+        <div class="content">
+            <h2 class="section-title">What You'll Master</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">⚖️</div>
+                    <div class="skill-title">Legal Drafting</div>
+                    <div class="skill-desc">Master notices, appeals & legal documentation</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🔍</div>
+                    <div class="skill-title">Investigations & Audits</div>
+                    <div class="skill-desc">Real-world exposure to complex cases</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">💼</div>
+                    <div class="skill-title">GST & Customs</div>
+                    <div class="skill-desc">Lead assignments with top departments</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">💰</div>
+                    <div class="skill-title">Refund Management</div>
+                    <div class="skill-desc">Handle high-value GST refund cases</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">✅</div>
+                    <div class="skill-title">Compliance & Advisory</div>
+                    <div class="skill-desc">Strategic consultations with clients</div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎯</div>
+                    <div class="skill-title">Practical Exposure</div>
+                    <div class="skill-desc">Work on live projects from day one</div>
+                </div>
+            </div>
+
+            <div class="why-join">
+                <h3>Why PMA Consulting?</h3>
+                <ul>
+                    <li>Specialized training in high-demand Indirect Tax domain</li>
+                    <li>Direct mentorship from industry experts</li>
+                    <li>Hands-on experience with premium clients</li>
+                    <li>Build a powerful network in GST & Customs</li>
+                    <li>Fast-track your career with cutting-edge skills</li>
+                </ul>
+            </div>
+
+            <div class="cta-section">
+                <h3>Ready to Level Up Your Career?</h3>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-name">CA Sajana Kumavat</div>
+                        <div class="contact-info">📱 90110 60487</div>
+                        <div class="contact-info">
+                            <a href="mailto:Sajana.Kumavat@lawgical.in">Sajana.Kumavat@lawgical.in</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-name">CA Sahil Tharani</div>
+                        <div class="contact-info">📱 90988 90333</div>
+                        <div class="contact-info">
+                            <a href="mailto:Sahil.Tharani@lawgical.in">Sahil.Tharani@lawgical.in</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank">🔗 LinkedIn: CA Pritam Mahure</a>
+                    <a href="https://instagram.com" target="_blank">📸 Instagram: PMA_Consulting</a>
+                </div>
+
+                <span class="location">📍 Pune</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
